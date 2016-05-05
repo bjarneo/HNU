@@ -7,7 +7,7 @@ const localShortcut = require('electron-localshortcut');
 const menu = require('./menu');
 
 // Module to control application life.
-const { app, globalShortcut } = electron;
+const { app } = electron;
 
 // Module to create native browser window.
 const BrowserWindow = electron.BrowserWindow;
