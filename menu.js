@@ -9,7 +9,7 @@ const tpl = [
             {
                 label: 'Repository',
                 click() {
-                    electron.shell.openExternal('https://github.com/bjarneo/hacker-news-unofficial');
+                    electron.shell.openExternal('https://github.com/bjarneo/HNU');
                 }
             }
         ]
