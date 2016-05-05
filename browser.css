@@ -1,0 +1,44 @@
+.comment > span {
+    color: #fff;
+}
+
+.comment .c00 a:link {
+    color: rgb(255, 102, 0);
+}
+
+#hnmain > tbody > tr > td > table > tbody > tr > td > a,
+#hnmain > tbody > tr > td > form > table > tbody > tr > td > a,
+.itemlist a:link,
+.title a:link,
+.yclinks a:link {
+    color: #f0f0f0;
+}
+
+#hnmain > tbody > tr > td > table > tbody > tr > td > a:visited,
+#hnmain > tbody > tr > td > form > table > tbody > tr > td > a:visited,
+.itemlist a:visited,
+.title a:visited,
+.yclinks a:visited {
+    color: #cccccc;
+}
+
+#hnmain > tbody > tr:first-child {
+    width: 100%;
+    display: table;
+    position: fixed;
+    vertical-align: middle !important;
+    height: 50px;
+}
+
+#hnmain > tbody > tr:nth-child(2) {
+    height: 55px !important;
+}
+
+#hnmain > tbody > tr {
+    vertical-align: top !important;
+}
+
+#hnmain {
+    background-color: #212121;
+    height: 100%;
+}

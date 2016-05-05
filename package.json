@@ -1,0 +1,42 @@
+{
+  "name": "HNU",
+  "version": "0.1.0",
+  "description": "Hacker news unofficial desktop application [HNU]",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js",
+    "lint": "eslint .",
+    "build": "npm run build:linux && npm run build:windows",
+    "build:linux": "electron-packager . --overwrite --asar --out=dist --prune --platform=linux --arch=x64 --app-bundle-id=com.bjarneoeverli.hnu --app-version=$npm_package_version && cd dist/HNU-linux-x64/ && zip -ryq9 ../HNU-linux-${npm_package_version}.zip *",
+    "build:windows": "electron-packager . --overwrite --asar --out=dist --ignore='^/media/(?!Icon.*ico$).*' --prune --platform=win32 --arch=ia32 --icon=media/Icon.ico --version-string.ProductName=$npm_package_productName --app-version=$npm_package_version && cd dist/HNU-win32-ia32 && zip -ryq9 ../HNU-windows-${npm_package_version}.zip *"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bjarneo/HNU.git"
+  },
+  "keywords": [
+    "hacker",
+    "news",
+    "desktop",
+    "application"
+  ],
+  "author": {
+    "name": "Bjarne Oeverli",
+    "email": "bjarne.oeverli@gmail.com",
+    "url": "bjarneo.codes"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bjarneo/HNU/issues"
+  },
+  "homepage": "https://github.com/bjarneo/HNU#readme",
+  "devDependencies": {
+    "electron-packager": "7.0.0",
+    "electron-prebuilt": "0.37.8",
+    "eslint": "2.9.0",
+    "eslint-config-vgno": "6.0.0"
+  },
+  "dependencies": {
+    "electron-localshortcut": "0.6.0"
+  }
+}
