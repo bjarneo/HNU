@@ -2,16 +2,14 @@
 
 const path = require('path');
 const fs = require('fs');
-const electron = require('electron');
+const { app, BrowserWindow, Menu } = require('electron');
 const localShortcut = require('electron-localshortcut');
 const menu = require('./menu');
-
-const { app, BrowserWindow } = electron;
 
 let mainWindow;
 
 function createWindow() {
-    electron.Menu.setApplicationMenu(menu);
+    Menu.setApplicationMenu(menu);
 
     mainWindow = new BrowserWindow({
         width: 750,
@@ -50,18 +48,22 @@ function createWindow() {
         }
     });
 
+    localShortcut.register(mainWindow, 'Ctrl+R', () => {
+        page.reload();
+    });
+
     page.on('will-navigate', (e, url) => {
         if (url.indexOf('news.ycombinator.com') === -1) {
             e.preventDefault();
 
-            electron.shell.openExternal(url);
+            shell.openExternal(url);
         }
     });
 
     page.on('new-window', (e, url) => {
         e.preventDefault();
 
-        electron.shell.openExternal(url);
+        shell.openExternal(url);
     });
 }
 
