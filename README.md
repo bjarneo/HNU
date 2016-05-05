@@ -1,7 +1,7 @@
 # HNU
 #### Hacker news unofficial desktop application
 
-![http://i.imgur.com/kf22sOX.png](http://i.imgur.com/kf22sOX.png)
+![http://i.imgur.com/lLETIhA.png](http://i.imgur.com/lLETIhA.png)
 
 Playing around using [Electron](https://github.com/electron/electron).
 
@@ -9,8 +9,9 @@ Don't have any build for OSX.
 
 ..And haven't tested in Windows.. :)
 
-## Commands
+## Keyboard shortcuts
 Go back: `ctrl+backspace`
+Refresh: `ctrl+R`
 
 ## Download
 [Latest release](https://github.com/bjarneo/hnu/releases/latest)
