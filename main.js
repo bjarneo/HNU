@@ -48,7 +48,7 @@ function createWindow() {
         }
     });
 
-    localShortcut.register(mainWindow, 'backspace', () => {
+    localShortcut.register(mainWindow, 'Ctrl+backspace', () => {
         if (page.canGoBack()) {
             page.goBack();
         }

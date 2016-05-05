@@ -9,6 +9,9 @@ Don't have any build for OSX.
 
 ..And haven't tested in Windows.. :)
 
+## Commands
+Go back: `ctrl+backspace`
+
 ## Download
 [Latest release](https://github.com/bjarneo/hnu/releases/latest)
 
