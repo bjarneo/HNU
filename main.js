@@ -49,7 +49,7 @@ function createWindow() {
     });
 
     localShortcut.register(mainWindow, 'Ctrl+R', () => {
-        page.reload();
+        page.reloadIgnoringCache();
     });
 
     page.on('will-navigate', (e, url) => {
