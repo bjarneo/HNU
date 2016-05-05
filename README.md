@@ -1,7 +1,7 @@
 # HNU
 #### Hacker news unofficial desktop application
 
-![http://i.imgur.com/lLETIhA.png](http://i.imgur.com/lLETIhA.png)
+![http://i.imgur.com/V8iNESb.png](http://i.imgur.com/V8iNESb.png)
 
 Playing around using [Electron](https://github.com/electron/electron).
 
