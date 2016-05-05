@@ -1,10 +1,24 @@
 .comment > span {
-    color: #fff;
+    color: #b9c0c4;
 }
 
 .comment .c00 a:link {
-    color: rgb(255, 102, 0);
+    color: #239687;
 }
+
+.votearrow {
+    background: none;
+}
+
+/*
+#hnmain span.comhead > a:link {
+    color: #66737a;
+}
+
+#hnmain span.comhead > a:visited {
+    color: #66737a;
+}
+*/
 
 #hnmain > tbody > tr > td > table > tbody > tr > td > a,
 #hnmain > tbody > tr > td > form > table > tbody > tr > td > a,
@@ -20,6 +34,11 @@
 .title a:visited,
 .yclinks a:visited {
     color: #cccccc;
+}
+
+#hnmain > tbody > tr:nth-child(1) > td,
+#hnmain > tbody > tr:nth-child(4) > td > table > tbody > tr > td {
+    background-color: #239687;
 }
 
 #hnmain > tbody > tr:first-child {
@@ -40,6 +59,59 @@
 }
 
 #hnmain {
-    background-color: #212121;
+    background-color: #273239;
     height: 100%;
+}
+
+textarea,
+input[type="text"],
+input[type="password"] {
+    background-color: #232d32;
+    border-radius: 5px;
+    border: none;
+    color: #f0f0f0 !important;
+    width: 100% !important;
+}
+
+input[type="submit"] {
+    width: 100%;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #239687;
+    color: #f0f0f0;
+    font-weight: 900;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+input[type="submit"]:hover {
+    opacity: 1;
+}
+
+/**
+ * Material
+ */
+ /* fallback */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://fonts.gstatic.com/s/materialicons/v16/2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
 }
