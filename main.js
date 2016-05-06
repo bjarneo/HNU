@@ -3,7 +3,7 @@
 const path = require('path');
 const fs = require('fs');
 const { app, BrowserWindow, Menu, shell } = require('electron');
-const menu = require('./menu');
+const menu = require('./src/menu');
 const shortcuts = require('./src/shortcuts');
 
 let mainWindow;
