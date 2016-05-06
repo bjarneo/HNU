@@ -32,7 +32,7 @@ function createWindow() {
     shortcuts(mainWindow, page);
 
     page.on('dom-ready', () => {
-        page.insertCSS(fs.readFileSync(path.join(__dirname, 'browser.css'), 'utf8'));
+        page.insertCSS(fs.readFileSync(path.join(__dirname, 'designs', 'hnu.css'), 'utf8'));
 
         mainWindow.show();
     });
