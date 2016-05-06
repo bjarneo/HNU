@@ -24,8 +24,7 @@
 #hnmain > tbody > tr > td > form > table > tbody > tr > td > a,
 .itemlist a:link,
 .title a:link,
-.yclinks a:link,
-body a:link {
+.yclinks a:link {
     color: #f0f0f0;
 }
 
@@ -33,8 +32,7 @@ body a:link {
 #hnmain > tbody > tr > td > form > table > tbody > tr > td > a:visited,
 .itemlist a:visited,
 .title a:visited,
-.yclinks a:visited,
-body:visited {
+.yclinks a:visited {
     color: #cccccc;
 }
 
@@ -67,6 +65,9 @@ body:visited {
 
 body {
     background-color: #273239;
+}
+
+form table, b {
     color: #f0f0f0;
 }
 
