@@ -11,13 +11,11 @@ let mainWindow;
 function createWindow() {
     Menu.setApplicationMenu(menu);
 
-
     mainWindow = new BrowserWindow({
         width: 750,
         height: 800,
         maxWidth: 750,
         title: 'Unofficial Hacker News desktop application',
-        backgroundColor: 'rgb(255, 102, 0)',
         darkTheme: true,
         icon: process.platform === 'linux' && path.join(__dirname, 'media', 'Icon.png')
     });
@@ -29,7 +27,7 @@ function createWindow() {
     });
 
     const page = mainWindow.webContents;
-    
+
     // Init keyboard shortcuts
     shortcuts(mainWindow, page);
 
