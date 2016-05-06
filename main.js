@@ -3,13 +3,14 @@
 const path = require('path');
 const fs = require('fs');
 const { app, BrowserWindow, Menu, shell } = require('electron');
-const localShortcut = require('electron-localshortcut');
 const menu = require('./menu');
+const shortcuts = require('./src/shortcuts');
 
 let mainWindow;
 
 function createWindow() {
     Menu.setApplicationMenu(menu);
+
 
     mainWindow = new BrowserWindow({
         width: 750,
@@ -28,6 +29,9 @@ function createWindow() {
     });
 
     const page = mainWindow.webContents;
+    
+    // Init keyboard shortcuts
+    shortcuts(mainWindow, page);
 
     page.on('dom-ready', () => {
         page.insertCSS(fs.readFileSync(path.join(__dirname, 'browser.css'), 'utf8'));
@@ -40,16 +44,6 @@ function createWindow() {
         if (cmd === 'browser-backward' && page.canGoBack()) {
             page.goBack();
         }
-    });
-
-    localShortcut.register(mainWindow, 'Ctrl+backspace', () => {
-        if (page.canGoBack()) {
-            page.goBack();
-        }
-    });
-
-    localShortcut.register(mainWindow, 'Ctrl+R', () => {
-        page.reloadIgnoringCache();
     });
 
     page.on('will-navigate', (e, url) => {
