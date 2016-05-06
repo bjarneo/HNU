@@ -16,6 +16,25 @@ Refresh: `ctrl+R`
 ## Download
 [Latest release](https://github.com/bjarneo/hnu/releases/latest)
 
+## Themes
+Change theme is available in the `menu -> Themes -> Theme name`.  
+
+It is possible to add new themes. The file must be added to `themes/` folder.  
+This code must be added to `src/menu.js` tpl const:
+```js
+{
+    label: 'Theme name',
+    file: 'custom-theme-name.css',
+    click() {
+        // The filename must be added for now.
+        insertCSS('custom-theme-name.css');
+
+        // Refresh page to remove other custom css.
+        page.reload();
+    }
+}
+```
+
 ## Icon for linux
 If you want an icon for the app, create a file in ~/.local/share/applications named
 hnu.desktop with:
@@ -42,7 +61,6 @@ npm install && npm start
 
 Things that might be cool to do
 ------
-* Restyle hacker news. Material design?
 * Shortcuts (submit)
 
 Contribution
