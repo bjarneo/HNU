@@ -1,16 +1,13 @@
 'use strict';
 
 const path = require('path');
-const fs = require('fs');
 const { app, BrowserWindow, Menu, shell } = require('electron');
-const menu = require('./src/menu');
 const shortcuts = require('./src/shortcuts');
+const insertStorageCSS = require('./src/insert-storage-css');
 
 let mainWindow;
 
 function createWindow() {
-    Menu.setApplicationMenu(menu);
-
     mainWindow = new BrowserWindow({
         width: 750,
         height: 800,
@@ -31,8 +28,10 @@ function createWindow() {
     // Init keyboard shortcuts
     shortcuts(mainWindow, page);
 
+    Menu.setApplicationMenu(require('./src/menu')(page));
+
     page.on('dom-ready', () => {
-        page.insertCSS(fs.readFileSync(path.join(__dirname, 'designs', 'hnu.css'), 'utf8'));
+        insertStorageCSS(page);
 
         mainWindow.show();
     });

@@ -37,6 +37,7 @@
     "eslint-config-vgno": "6.0.0"
   },
   "dependencies": {
+    "electron-json-storage": "^2.0.0",
     "electron-localshortcut": "0.6.0"
   }
 }
