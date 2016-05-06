@@ -24,7 +24,8 @@
 #hnmain > tbody > tr > td > form > table > tbody > tr > td > a,
 .itemlist a:link,
 .title a:link,
-.yclinks a:link {
+.yclinks a:link,
+body a:link {
     color: #f0f0f0;
 }
 
@@ -32,7 +33,8 @@
 #hnmain > tbody > tr > td > form > table > tbody > tr > td > a:visited,
 .itemlist a:visited,
 .title a:visited,
-.yclinks a:visited {
+.yclinks a:visited,
+body:visited {
     color: #cccccc;
 }
 
@@ -63,12 +65,18 @@
     height: 100%;
 }
 
+body {
+    background-color: #273239;
+    color: #f0f0f0;
+}
+
 textarea,
 input[type="text"],
 input[type="password"] {
     background-color: #232d32;
     border-radius: 5px;
     border: none;
+    padding: 5px;
     color: #f0f0f0 !important;
     width: 100% !important;
 }
