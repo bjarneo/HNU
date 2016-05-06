@@ -10,7 +10,7 @@ Don't have any build for OSX.
 ..And haven't tested in Windows.. :)
 
 ## Keyboard shortcuts
-Go back: `ctrl+backspace`
+Go back: `ctrl+backspace`  
 Refresh: `ctrl+R`
 
 ## Download
