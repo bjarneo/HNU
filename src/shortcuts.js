@@ -12,4 +12,4 @@ module.exports = function shortcuts(win, page) {
     localShortcut.register(win, 'Ctrl+R', () => {
         page.reloadIgnoringCache();
     });
-}
+};
