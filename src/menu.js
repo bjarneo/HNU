@@ -5,9 +5,6 @@ const electron = require('electron');
 module.exports = function menu(page) {
     const insertCSS = require('./insert-css')(page);
 
-    // Make it the default design;
-    insertCSS('hnu.css');
-
     const tpl = [
         {
             label: 'Themes',

@@ -28,9 +28,9 @@ function createWindow() {
     // Init keyboard shortcuts
     shortcuts(mainWindow, page);
 
-    page.on('dom-ready', () => {
-        Menu.setApplicationMenu(require('./src/menu')(page));
+    Menu.setApplicationMenu(require('./src/menu')(page));
 
+    page.on('dom-ready', () => {
         insertStorageCSS(page);
 
         mainWindow.show();
