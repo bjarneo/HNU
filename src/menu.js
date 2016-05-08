@@ -24,7 +24,8 @@ module.exports = function menu(page) {
                 addTheme('default', 'none'),
                 addTheme('HNU', 'hnu.css'),
                 addTheme('HNU Night mode', 'hnu-night.css'),
-                addTheme('Lost sunset', 'lost-sunset.css')
+                addTheme('Lost sunset', 'lost-sunset.css'),
+                addTheme('Haxxor', 'haxxor.css')
             ]
         },
         {
