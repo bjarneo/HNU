@@ -13,6 +13,7 @@ Don't have any build for OSX.
 Go back: `ctrl+backspace`, OSX: `cmd+backspace`  
 Refresh: `ctrl+R`, OSX: `cmd+R`  
 Get current url: `ctrl+L`, OSX: `cmd+L`  
+Submit: `ctrl+S`, OSX: `cmd+S`  
 
 ## Download
 [Latest release](https://github.com/bjarneo/hnu/releases/latest)

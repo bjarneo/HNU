@@ -6,6 +6,13 @@ const view = {
     label: 'View',
     submenu: [
         {
+            label: 'Submit',
+            accelerator: 'CmdOrCtrl+S',
+            click: (item, focusedWindow) => {
+                focusedWindow.webContents.loadURL('https://news.ycombinator.com/submit');
+            }
+        },
+        {
             label: 'Reload',
             accelerator: 'CmdOrCtrl+R',
             click: (item, focusedWindow) => {
