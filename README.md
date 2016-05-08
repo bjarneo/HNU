@@ -10,8 +10,8 @@ Don't have any build for OSX.
 ..And haven't tested in Windows.. :)
 
 ## Keyboard shortcuts
-Go back: `ctrl+backspace`  
-Refresh: `ctrl+R`
+Go back: `ctrl+backspace`, OSX: `cmd+backspace`  
+Refresh: `ctrl+R`, OSX: `cmd+R`  
 
 ## Download
 [Latest release](https://github.com/bjarneo/hnu/releases/latest)
