@@ -31,7 +31,7 @@ const view = {
             accelerator: 'CmdOrCtrl+R',
             click: (item, focusedWindow) => {
                 if (focusedWindow) {
-                    focusedWindow.reload();
+                    focusedWindow.webContents.reloadIgnoringCache();
                 }
             }
         },
