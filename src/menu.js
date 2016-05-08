@@ -1,6 +1,7 @@
 'use strict';
 
 const electron = require('electron');
+const view = require('./menu/view');
 
 module.exports = function menu(page) {
     const insertCSS = require('./insert-css')(page);
@@ -18,20 +19,7 @@ module.exports = function menu(page) {
     }
 
     const tpl = [
-        {
-            label: 'View',
-            submenu: [
-                {
-                    label: 'Reload',
-                    accelerator: 'CmdOrCtrl+R',
-                    click: (item, focusedWindow) => {
-                        if (focusedWindow) {
-                            focusedWindow.reload();
-                        }
-                    }
-                }
-            ]
-        },
+        view,
         {
             label: 'Themes',
             submenu: [
