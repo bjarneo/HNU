@@ -19,7 +19,7 @@ Refresh: `ctrl+R`
 ## Themes
 Change theme is available in the `menu -> Themes -> Theme name`.
 
-Go to themes: [https://github.com/bjarneo/HNU/blob/master/THEMES.md](https://github.com/bjarneo/HNU/blob/master/THEMES.md)  
+Themes: [https://github.com/bjarneo/HNU/blob/master/THEMES.md](https://github.com/bjarneo/HNU/blob/master/THEMES.md)  
 
 It is possible to add new themes. The file must be added to `themes/` folder.  
 This code must be added to `src/menu.js` tpl const:
