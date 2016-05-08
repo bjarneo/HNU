@@ -10,7 +10,7 @@ module.exports = function menu(page) {
             label: 'Themes',
             submenu: [
                 {
-                    label: 'default [HN]',
+                    label: 'default',
                     // Leave it. Will do this automatically
                     file: 'none',
                     click() {
@@ -20,11 +20,31 @@ module.exports = function menu(page) {
                     }
                 },
                 {
-                    label: 'default [HNU]',
+                    label: 'HNU',
                     // Leave it. Will do this automatically
                     file: 'hnu.css',
                     click() {
                         insertCSS('hnu.css');
+
+                        page.reload();
+                    }
+                },
+                {
+                    label: 'HNU Night',
+                    // Leave it. Will do this automatically
+                    file: 'hnu-night.css',
+                    click() {
+                        insertCSS('hnu-night.css');
+
+                        page.reload();
+                    }
+                },
+                {
+                    label: 'Lost sunset',
+                    // Leave it. Will do this automatically
+                    file: 'lost-sunset.css',
+                    click() {
+                        insertCSS('lost-sunset.css');
 
                         page.reload();
                     }
