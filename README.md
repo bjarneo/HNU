@@ -39,7 +39,7 @@ Terminal=false
 Type=Application
 Icon=/full/path/to/icon/Icon.png
 ```
-Icon you need to download: [http://i.imgur.com/oXfkU0T.png](http://i.imgur.com/oXfkU0T.png)
+Icon you need to download: [Icon.png](https://github.com/bjarneo/HNU/blob/master/media/Icon.png)
 
 ## Manually
 
