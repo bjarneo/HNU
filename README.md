@@ -12,6 +12,7 @@ Don't have any build for OSX.
 ## Keyboard shortcuts
 Go back: `ctrl+backspace`, OSX: `cmd+backspace`  
 Refresh: `ctrl+R`, OSX: `cmd+R`  
+Get current url: `ctrl+L`, OSX: `cmd+L`  
 
 ## Download
 [Latest release](https://github.com/bjarneo/hnu/releases/latest)

@@ -1,5 +1,7 @@
 'use strict';
 
+const { dialog } = require('electron');
+
 const view = {
     label: 'View',
     submenu: [
@@ -19,6 +21,18 @@ const view = {
                 if (focusedWindow.webContents.canGoBack()) {
                     focusedWindow.webContents.goBack();
                 }
+            }
+        },
+        {
+            label: 'Copy link',
+            accelerator: 'CmdOrCtrl+L',
+            click: (item, focusedWindow) => {
+                dialog.showMessageBox(focusedWindow, {
+                    type: 'none',
+                    buttons: ['close'],
+                    title: 'Fetch current URL',
+                    message: focusedWindow.webContents.getURL()
+                });
             }
         }
     ]
