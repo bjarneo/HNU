@@ -19,6 +19,20 @@ module.exports = function menu(page) {
 
     const tpl = [
         {
+            label: 'View',
+            submenu: [
+                {
+                    label: 'Reload',
+                    accelerator: 'CmdOrCtrl+R',
+                    click: (item, focusedWindow) => {
+                        if (focusedWindow) {
+                            focusedWindow.reload();
+                        }
+                    }
+                }
+            ]
+        },
+        {
             label: 'Themes',
             submenu: [
                 addTheme('default', 'none'),

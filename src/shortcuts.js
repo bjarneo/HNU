@@ -8,8 +8,4 @@ module.exports = function shortcuts(win, page) {
             page.goBack();
         }
     });
-
-    localShortcut.register(win, 'Ctrl+R', () => {
-        page.reloadIgnoringCache();
-    });
 };
