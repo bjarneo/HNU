@@ -1,0 +1,89 @@
+.comment > span {
+    color: #b9c0c4;
+}
+
+.comment .c00 a:link {
+    color: #fa7066;
+}
+
+.votearrow {
+    background: none;
+}
+
+#hnmain > tbody > tr > td > table > tbody > tr > td > a,
+#hnmain > tbody > tr > td > form > table > tbody > tr > td > a,
+.itemlist a:link,
+.title a:link,
+.yclinks a:link {
+    color: #f0f0f0;
+}
+
+#hnmain > tbody > tr > td > table > tbody > tr > td > a:visited,
+#hnmain > tbody > tr > td > form > table > tbody > tr > td > a:visited,
+.itemlist a:visited,
+.title a:visited,
+.yclinks a:visited {
+    color: #cccccc;
+}
+
+#hnmain > tbody > tr:nth-child(1) > td,
+#hnmain > tbody > tr:nth-child(4) > td > table > tbody > tr > td {
+    background-color: #fa7066;
+}
+
+#hnmain > tbody > tr:first-child {
+    width: 100%;
+    display: table;
+    position: fixed;
+    vertical-align: middle !important;
+    height: 50px;
+    z-index: 9999;
+}
+
+#hnmain > tbody > tr:nth-child(2) {
+    height: 55px !important;
+}
+
+#hnmain > tbody > tr {
+    vertical-align: top !important;
+}
+
+#hnmain {
+    background-color: #2c1b31;
+    height: 100%;
+}
+
+body {
+    background-color: #2c1b31;
+}
+
+form table, b {
+    color: #f0f0f0;
+}
+
+textarea,
+input[type="text"],
+input[type="password"] {
+    background-color: #623c62;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    color: #f0f0f0 !important;
+    width: 100% !important;
+}
+
+input[type="submit"] {
+    width: 100%;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #fa7066;
+    color: #f0f0f0;
+    font-weight: 900;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+input[type="submit"]:hover {
+    opacity: 1;
+}

@@ -5,30 +5,26 @@ const electron = require('electron');
 module.exports = function menu(page) {
     const insertCSS = require('./insert-css')(page);
 
+    function addTheme(label, file) {
+        return {
+            label,
+            file,
+            click() {
+                insertCSS(file);
+
+                page.reload();
+            }
+        };
+    }
+
     const tpl = [
         {
             label: 'Themes',
             submenu: [
-                {
-                    label: 'default [HN]',
-                    // Leave it. Will do this automatically
-                    file: 'none',
-                    click() {
-                        insertCSS('none');
-
-                        page.reload();
-                    }
-                },
-                {
-                    label: 'default [HNU]',
-                    // Leave it. Will do this automatically
-                    file: 'hnu.css',
-                    click() {
-                        insertCSS('hnu.css');
-
-                        page.reload();
-                    }
-                }
+                addTheme('default', 'none'),
+                addTheme('HNU', 'hnu.css'),
+                addTheme('HNU Night mode', 'hnu-night.css'),
+                addTheme('Lost sunset', 'lost-sunset.css')
             ]
         },
         {

@@ -1,8 +1,9 @@
 {
   "name": "HNU",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Hacker news unofficial desktop application [HNU]",
   "main": "main.js",
+  "private": true,
   "scripts": {
     "start": "electron main.js",
     "lint": "eslint .",
