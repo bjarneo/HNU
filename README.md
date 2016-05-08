@@ -24,17 +24,7 @@ Themes: [https://github.com/bjarneo/HNU/blob/master/THEMES.md](https://github.co
 It is possible to add new themes. The file must be added to `themes/` folder.  
 This code must be added to `src/menu.js` tpl const:
 ```js
-{
-    label: 'Theme name',
-    file: 'custom-theme-name.css',
-    click() {
-        // The filename must be added for now.
-        insertCSS('custom-theme-name.css');
-
-        // Refresh page to remove other custom css.
-        page.reload();
-    }
-}
+addTheme('Theme Name', 'css-file.css')
 ```
 
 ## Icon for linux
