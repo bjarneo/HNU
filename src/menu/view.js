@@ -6,19 +6,15 @@ const view = {
     label: 'View',
     submenu: [
         {
-            label: 'Submit',
-            accelerator: 'CmdOrCtrl+S',
+            label: 'Copy link',
+            accelerator: 'CmdOrCtrl+L',
             click: (item, focusedWindow) => {
-                focusedWindow.webContents.loadURL('https://news.ycombinator.com/submit');
-            }
-        },
-        {
-            label: 'Reload',
-            accelerator: 'CmdOrCtrl+R',
-            click: (item, focusedWindow) => {
-                if (focusedWindow) {
-                    focusedWindow.reload();
-                }
+                dialog.showMessageBox(focusedWindow, {
+                    type: 'none',
+                    buttons: ['close'],
+                    title: 'Fetch current URL',
+                    message: focusedWindow.webContents.getURL()
+                });
             }
         },
         {
@@ -31,15 +27,19 @@ const view = {
             }
         },
         {
-            label: 'Copy link',
-            accelerator: 'CmdOrCtrl+L',
+            label: 'Reload',
+            accelerator: 'CmdOrCtrl+R',
             click: (item, focusedWindow) => {
-                dialog.showMessageBox(focusedWindow, {
-                    type: 'none',
-                    buttons: ['close'],
-                    title: 'Fetch current URL',
-                    message: focusedWindow.webContents.getURL()
-                });
+                if (focusedWindow) {
+                    focusedWindow.reload();
+                }
+            }
+        },
+        {
+            label: 'Submit',
+            accelerator: 'CmdOrCtrl+S',
+            click: (item, focusedWindow) => {
+                focusedWindow.webContents.loadURL('https://news.ycombinator.com/submit');
             }
         }
     ]
