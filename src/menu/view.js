@@ -11,6 +11,15 @@ const view = {
                     focusedWindow.reload();
                 }
             }
+        },
+        {
+            label: 'Go back',
+            accelerator: 'CmdOrCtrl+backspace',
+            click: (item, focusedWindow) => {
+                if (focusedWindow.webContents.canGoBack()) {
+                    focusedWindow.webContents.goBack();
+                }
+            }
         }
     ]
 };

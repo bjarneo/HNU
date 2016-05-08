@@ -2,7 +2,6 @@
 
 const path = require('path');
 const { app, BrowserWindow, Menu, shell } = require('electron');
-const shortcuts = require('./src/shortcuts');
 const insertStorageCSS = require('./src/insert-storage-css');
 
 let mainWindow;
@@ -24,9 +23,6 @@ function createWindow() {
     });
 
     const page = mainWindow.webContents;
-
-    // Init keyboard shortcuts
-    shortcuts(mainWindow, page);
 
     Menu.setApplicationMenu(require('./src/menu')(page));
 
