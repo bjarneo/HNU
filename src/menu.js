@@ -34,7 +34,7 @@ module.exports = function menu(page) {
             label: 'Help',
             submenu: [
                 {
-                    label: 'Repository',
+                    label: 'Website',
                     click() {
                         electron.shell.openExternal('https://github.com/bjarneo/HNU');
                     }
