@@ -51,10 +51,6 @@ cd hnu
 npm install && npm start
 ```
 
-Things that might be cool to do
-------
-* Shortcuts (submit)
-
 Contribution
 ------
 Contributions are appreciated.
