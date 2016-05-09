@@ -5,9 +5,7 @@
 
 Playing around using [Electron](https://github.com/electron/electron).
 
-Don't have any build for OSX.
-
-..And haven't tested in Windows.. :)
+OS X, Windows and Linux support.
 
 ## Keyboard shortcuts
 Go back: `ctrl+backspace`, OSX: `cmd+backspace`  
