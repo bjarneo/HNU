@@ -13,7 +13,9 @@ module.exports = function menu(page) {
             click() {
                 insertCSS(file);
 
-                page.reload();
+                if (label === 'default') {
+                    page.reload();
+                }
             }
         };
     }
