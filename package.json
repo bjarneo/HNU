@@ -35,7 +35,7 @@
   "devDependencies": {
     "electron-packager": "7.0.0",
     "electron-prebuilt": "0.37.8",
-    "eslint": "2.9.0",
+    "eslint": "6.6.0",
     "eslint-config-vgno": "6.0.0"
   },
   "dependencies": {
